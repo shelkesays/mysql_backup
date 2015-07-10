@@ -24,4 +24,3 @@
 ### Who do I talk to? ###
 
 * @srahul07
-* @mycuteoffice 

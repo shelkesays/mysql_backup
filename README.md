@@ -7,20 +7,20 @@
 Backup script helps in taking backup of mysql / mariadb database. 
 It takes backup of all the databases present on the host server.
 
-If "RDB_LIST_LOAD_FROM_DB" is True, this will first create a list of databases present on server and write to the file locally
+If <pre><code>RDB_LIST_LOAD_FROM_DB</code></pre> is True, this will first create a list of databases present on server and write to the file locally
 
-If you wish to provide your own list of databases to take backup instead of all the databases present on server, give "RDB_LIST_SOURCE_FILE" path to list file.
-NOTE: make sure in this case the "RDB_LIST_LOAD_FROM_DB" is False
+If you wish to provide your own list of databases to take backup instead of all the databases present on server, give <pre><code>RDB_LIST_SOURCE_FILE" path to list file.
+NOTE: make sure in this case the <pre><code>RDB_LIST_LOAD_FROM_DB</code></pre> is False
 
-If you wish to take backup on only one database, then give default db to "RDB_DEFAULT_DB".
-NOTE: make sure in this case the "RDB_LIST_LOAD_FROM_DB" is False
+If you wish to take backup on only one database, then give default db to <pre><code>RDB_DEFAULT_DB</code></pre>.
+NOTE: make sure in this case the <pre><code>RDB_LIST_LOAD_FROM_DB</code></pre> is False
 
-Give "RDB_DESTINATION_DIRECTORY" path to where you would like to store your database backup files.
+Give <pre><code>RDB_DESTINATION_DIRECTORY</code></pre> path to where you would like to store your database backup files.
 
-If "ZIP_STATUS" is True, it will compress all the backup files.
+If <pre><code>ZIP_STATUS</code></pre> is True, it will compress all the backup files.
 
 
-NOTE: Keep list of all the databases that needs to be ignored while taking backup in "RDB_IGNORE"
+NOTE: Keep list of all the databases that needs to be ignored while taking backup in <pre><code>RDB_IGNORE</code></pre>
 
 
 * Version
@@ -52,12 +52,6 @@ python database.py
 
 python database.py 
 
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
 
 ### Who do I talk to? ###
 

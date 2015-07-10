@@ -1,4 +1,4 @@
-# Backup Script #
+# MySQL / MariaDB Backup Script #
 
 ### This Backup Script is to take backup of mysql server. ###
 

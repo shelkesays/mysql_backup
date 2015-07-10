@@ -1,26 +1,27 @@
 # MySQL / MariaDB Backup Script #
 
-### This Backup Script is to take backup of mysql server. ###
+### Backup script helps in taking backup of mysql / mariadb database. ###
 
 * Quick summary
 
-Backup script helps in taking backup of mysql / mariadb database. 
 It takes backup of all the databases present on the host server.
 
 If <pre><code>RDB_LIST_LOAD_FROM_DB = True</code></pre> will first create a list of databases present on server and write to the file locally
 
-If you wish to provide your own list of databases to take backup instead of all the databases present on server, give <pre><code>RDB_LIST_SOURCE_FILE</code></pre> path to list file.
+If you wish to provide your own list of databases to take backup instead of all the databases present on server, give <pre><code>RDB_LIST_SOURCE_FILE  = /path/to/list/file</code></pre>
 NOTE: make sure in this case the <pre><code>RDB_LIST_LOAD_FROM_DB = False</code></pre>
 
-If you wish to take backup on only one database, then give default db to <pre><code>RDB_DEFAULT_DB</code></pre>.
+If you wish to take backup on only one database, then give default db to <pre><code>RDB_DEFAULT_DB = "default_db"</code></pre>.
 NOTE: make sure in this case the <pre><code>RDB_LIST_LOAD_FROM_DB = False</code></pre>
 
-Give <pre><code>RDB_DESTINATION_DIRECTORY</code></pre> path to where you would like to store your database backup files.
+<pre><code>RDB_DESTINATION_DIRECTORY = /path/to/backup/destination/directory</code></pre>
 
-If <pre><code>ZIP_STATUS = True</code></pre>, then it will compress all the backup files.
+To compress all the backup files,
+<pre><code>ZIP_STATUS = True</code></pre>
 
 
-NOTE: Keep list of all the databases that needs to be ignored while taking backup in <pre><code>RDB_IGNORE</code></pre>
+NOTE: To keep list of all the databases that needs to be ignored while taking backup
+<pre><code>RDB_IGNORE = ["mysql", "information_schema", "performance_schema"]</code></pre>
 
 
 * Version
